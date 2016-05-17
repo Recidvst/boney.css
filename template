@@ -19,7 +19,9 @@ html {
  margin-bottom: 1%;
  text-align: center;
  }
- 
+ img {
+	max-width: 100%;
+ }
   /* For Small Phones */
 /* Max one column per row*/  
 .boney-columns {
@@ -27,6 +29,9 @@ html {
   float: left;
   box-sizing: border-box; 
   }
+.pad {
+	display: none;
+ }
   
  /* For Large Phones */	
 /* Max two columns per row*/
@@ -37,40 +42,53 @@ html {
     width: 45%; }
 .boney-columns {
     margin-left: 2%; }
+.four.boney-columns:nth-child(3)  { 
+	margin-left: 25%; }	
 .twelve.boney-columns  { 
 	width: 92%; margin-left: 2%; }
+.pad {
+	display: none; }
 }
 
  /* For Tablet */
- /* Max four columns per row*/
+ /* Max four columns per row + rough, equal sizes for larger width columns **WARNING - uneven columns become even here** */
 @media (min-width: 767px) {
 .container {
     width: 100%; }
 .boney-columns {
-    width: 22.6%; }
-.boney-columns {
-    margin-left: 2%; }
+    width: 22.6%; margin-left: 2%; }
+.two.boney-columns:nth-child(5) {
+	margin-left: 26.6%; }
 .four.boney-columns {
 	width: 30.8%; }
-.six.boney-columns {
+.five.boney-columns, .six.boney-columns, .seven.boney-columns {
 	width: 47.2%; }
+.eight.boney-columns {
+	width: 63.7%; }
+.nine.boney-columns, .ten.boney-columns, .eleven.boney-columns  { 
+	width: 71.8%;  }
 .twelve.boney-columns  { 
 	width: 96.5%; margin-left: 2%; }
+.pad {
+	display: none; }
 }
 
 /* For Desktop */
 @media (min-width: 992px) {
   .container {
     width: 100%; }
+  .pad {
+	display: block; }	
   .boney-columns {
     margin-left: 1%; }
   .boney-columns:first-child {
     margin-left: 2%; }
-
   .one.boney-columns { 
 	width: 7.1%; }
   .two.boney-columns { 
 	width: 15.2%; }
+  .two.boney-columns:nth-child(5) {
+	margin-left: 1%; }
   .three.boney-columns { 
 	width: 23.3%; }
   .four.boney-columns { 
@@ -80,15 +98,15 @@ html {
   .six.boney-columns  { 
 	width: 47.6%; }
   .seven.boney-columns  { 
-	width: 56.6666666667%; }
+	width: 55.9%; }
   .eight.boney-columns  { 
-	width: 65.3333333333%; }
+	width: 63.8%; }
   .nine.boney-columns { 
-	width: 74.0%; }
+	width: 71.9%; }
   .ten.boney-columns { 
-	width: 82.6666666667%; }
+	width: 80%; }
   .eleven.boney-columns { 
-	width: 91.3333333333%; }
+	width: 88.1%; }
   .twelve.boney-columns { 
 	width: 96.2%; margin-left: 2%; }
 }
