@@ -1,0 +1,19 @@
+{
+  "name": "boney.css",
+  "description": "Boney CSS Grid",
+  "main": "boney.js",
+  "authors": [
+    "Recidvst"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Recidvst/boney.css",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

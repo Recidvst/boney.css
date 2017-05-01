@@ -1,0 +1,82 @@
+// Column variables //
+$col: 6;
+$gut: 1%;
+// col sums //
+@for $i from 1 through $col {
+  .b-col-#{$i} {
+    width: calc( (100% - (#{$i} * 1%) ) / #{$i} );
+    display: block;
+    float: left;
+    margin: 0 0.5% $gut 0.5%;
+  }
+  .b-col-#{$i}-last {
+    @extend .b-col-#{$i};
+    margin-right: 0;
+  }
+}
+// Base //
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+// Container
+.container-fluid {
+  position: relative;
+  display: block;
+  min-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.container {
+  @extend .container-fluid;
+  max-width: 1600px;
+}
+.row {
+  clear: both;
+}
+// Media
+// Add 'KEEP' to prevent columns resizing to standard sizes
+/* Max one column per row*/
+@media (max-width: 497px) {
+  *[class*='b-col-'] {
+    &.mob {
+      width: 99%;
+    }
+  }
+}
+/* Max two columns per row*/
+@media (min-width: 498px) and (max-width: 767px){
+  *[class*='b-col-'] {
+      &.tab {
+      width: 49%;
+    }
+  }
+}
+/* Max four columns per row */
+@media (min-width: 768px) and (max-width: 992px) {
+  *[class*='b-col-'] {
+    &.phab {
+      width: 24%;
+    }
+  }
+}
+// Utilities
+.text-center {
+  text-align: center;
+}
+.max-100 {
+  max-width: 100% !important;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}

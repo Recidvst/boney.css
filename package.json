@@ -1,0 +1,28 @@
+{
+  "name": "boney.css",
+  "version": "1.0.0",
+  "description": "Boney CSS Grid",
+  "main": "boney.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Recidvst/boney.css.git"
+  },
+  "author": "Recidvst",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Recidvst/boney.css/issues"
+  },
+  "homepage": "https://github.com/Recidvst/boney.css#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.5.1",
+    "gulp-util": "^3.0.8"
+  }
+}
